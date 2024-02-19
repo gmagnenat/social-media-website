@@ -3,7 +3,7 @@
         <div class="">
             <img
                 :src="image"
-                class="w-full object-cover h-40 rounded-md"
+                class="w-[40px] object-cover rounded-full"
                 alt=""
             />
             <div>

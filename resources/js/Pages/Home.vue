@@ -12,20 +12,20 @@ defineProps({});
 <template>
     <Head title="Social Media Website" />
 
-    <div class="grid grid-cols-12 p-4 gap-4">
+    <div class="grid grid-cols-12 p-4 gap-4 h-screen">
         <div
-            class="col-span-12 md:col-span-3 bg-gray-50 rounded-lg p-4 shadow-sm order-2 md:order-1"
+            class="col-span-12 md:col-span-3 h-[500px] lg:h-full overflow-hidden"
         >
             <GroupList />
         </div>
         <div
-            class="col-span-12 md:col-span-6 bg-gray-50 rounded-lg p-4 shadow-sm order-1"
+            class="col-span-12 md:col-span-6 order-1 h-[500px] lg:h-full overflow-hidden flex flex-col"
         >
             <CreatePost />
-            <PostList />
+            <PostList class="flex-1" />
         </div>
         <div
-            class="col-span-12 md:col-span-3 bg-gray-50 rounded-lg p-4 shadow-sm order-3"
+            class="col-span-12 md:col-span-3 order-3 h-[300px] lg:h-full overflow-hidden"
         >
             <FollowingList />
         </div>
