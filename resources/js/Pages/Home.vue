@@ -14,18 +14,18 @@ defineProps({});
 
     <div class="grid grid-cols-12 p-4 gap-4 h-screen">
         <div
-            class="col-span-12 md:col-span-3 h-[500px] lg:h-full overflow-hidden"
+            class="col-span-12 md:col-span-3 order-2 md:order-1 h-max lg:h-full overflow-hidden"
         >
             <GroupList />
         </div>
         <div
-            class="col-span-12 md:col-span-6 order-1 h-[500px] lg:h-full overflow-hidden flex flex-col"
+            class="col-span-12 md:col-span-6 order-1 md:order-1 h-[500px] lg:h-full overflow-hidden flex flex-col"
         >
             <CreatePost />
             <PostList class="flex-1" />
         </div>
         <div
-            class="col-span-12 md:col-span-3 order-3 h-[300px] lg:h-full overflow-hidden"
+            class="col-span-12 md:col-span-3 order-3 h-max lg:h-full overflow-hidden"
         >
             <FollowingList />
         </div>
